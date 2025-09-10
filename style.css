@@ -1,0 +1,254 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+}
+html{
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+html {
+  height: 4000px;
+}
+.fa-search {
+  padding-top: 10px;
+  padding-right: 10px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+/* =====================
+    Navigation Bar or Header
+========================= */
+a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.fa-search {
+  font-size: 13px;
+}
+
+.logo {
+  background-color: #009688;
+}
+a:hover {
+  background-color: #8a8282;
+}
+
+.parent-link {
+  background-color: wheat;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-left: 350px;
+
+  visibility: hidden;
+}
+.drop:hover + .parent-link {
+  visibility: visible;
+}
+
+/* =====================
+    Image Section
+========================= */
+
+.main-img {
+  width: 100%;
+  height: 350px;
+}
+.learn {
+  position: relative;
+  bottom: 90px;
+  left: 50px;
+  background: black;
+  font-size: 25px;
+}
+.learn:hover {
+  background: teal;
+}
+
+/* =====================
+    Our Team Section
+========================= */
+
+.our-team {
+  text-align: center;
+  margin-bottom: 14px;
+}
+.meet {
+  text-align: center;
+}
+.avatar {
+  border-radius: 50%;
+}
+.yassine {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.division {
+  text-align: center;
+  margin-top: 50px;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .our-work ,.white{
+    border: red solid 2px;
+} */
+.gray {
+  margin-top: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #333333;
+  display: flex;
+  justify-content: space-around;
+}
+
+.snow{
+    height: 160px;
+    width: 100%;
+}
+.our-work {
+    width: 25%;
+    color: white;
+    line-height: 24px;
+
+}
+
+.white{
+    background-color: #fff;
+    height: 360px;
+    width: 23%;
+    line-height: 30px;
+}
+
+.white h3 ,.white p{
+    padding-left: 12px;
+}
+
+.our-work h2{
+    margin-bottom: 20px;
+}
+.our-work p{
+    margin-left: 7px;
+}
+
+
+.pricing{
+    text-align: center;
+    margin-top: 90px; 
+}
+.basic{
+    border: solid rgb(211,206,206) 2px;
+    margin-top: 60px ;
+    width: 30%;
+}
+.basic h4{
+    background-color: black;
+    color: white;
+    padding: 30px 0;
+}
+
+.basic p{
+    border: 1px solid rgb(211,206,206);
+    padding: 14px 0;
+}
+
+.span-gb{
+    font-weight: bold ;
+}
+
+.sign-up{
+background-color: teal; 
+margin-top: 10px;
+margin-bottom: 10px;
+
+padding: 12px 20px;
+}
+.parent{
+    display: flex;
+    justify-content: space-around;
+}
+
+.basic:hover{
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.form{
+    margin-top: 100px;
+    background-color: rgb(236,236,236);
+    padding: 60px 0;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-us h1{
+    border-bottom: 4px solid teal;
+    display: inline-block;
+}
+
+.contact-us{
+    /* border: 2px solid red ; */
+    width: 40%;
+    line-height: 40px;
+    padding-left: 20px;
+    margin-top: 20px;
+
+}
+.real-form{
+    background-color: white;
+    /* border: 2px solid royalblue; */
+    width: 55%;
+    box-shadow: 5px 5px 25px rgb(190,190, 188) ;
+    padding-top: 20px;
+    padding-left: 19px;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid rgb(201, 200, 200);
+    height: 30px;
+    width: 100%;
+}
+
+.checkbox{
+    width: 20px;
+}
+
+.checkbox-label{
+   position: relative;
+   bottom: 10px;
+   left: 19px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid black;
+    float:right ;
+    margin-bottom: 17px;
+    margin-right: 10px;
+}
+
+.map{
+    width: 100%;
+    height: 500px;
+}
