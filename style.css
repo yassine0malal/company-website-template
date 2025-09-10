@@ -1,17 +1,42 @@
+/*=====================
+      Table of Contents
+========================
+1. Global Styles
+2. Navigation Bar or Header
+3. Image Section
+4. Our Team Section
+5. Our Work Section
+6. Contact Us Section
+7. Map Section
+8. Footer Section
+======================= */
+
+
+
+/* =====================
+    Global Styles
+========================= */
+
 * {
   font-family: sans-serif;
   margin: 0;
 }
-html{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
 
-*,*:before,*:after{
-    box-sizing: inherit;
+html{
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 html {
-  height: 4000px;
+  height: 3200px;
 }
 .fa-search {
   padding-top: 10px;
@@ -53,7 +78,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   position: absolute;
-  margin-left: 350px;
+  margin-left: 320px;
 
   visibility: hidden;
 }
@@ -84,6 +109,9 @@ a:hover {
     Our Team Section
 ========================= */
 
+#team{
+    padding-top: 70px;
+}
 .our-team {
   text-align: center;
   margin-bottom: 14px;
@@ -108,147 +136,280 @@ a:hover {
   justify-content: space-around;
 }
 
-/* .our-work ,.white{
-    border: red solid 2px;
-} */
+/* =====================
+    Our Work Section
+========================= */
 .gray {
+
   margin-top: 60px;
-  padding-top: 40px;
+  padding-top: 60px;
   padding-bottom: 40px;
   background-color: #333333;
   display: flex;
   justify-content: space-around;
 }
 
-.snow{
-    height: 160px;
-    width: 100%;
+.snow {
+  height: 160px;
+  width: 100%;
 }
 .our-work {
-    width: 25%;
-    color: white;
-    line-height: 24px;
-
+  width: 25%;
+  color: white;
+  line-height: 24px;
 }
 
-.white{
-    background-color: #fff;
-    height: 360px;
-    width: 23%;
-    line-height: 30px;
+.white {
+  background-color: #fff;
+  height: 360px;
+  width: 23%;
+  line-height: 30px;
 }
 
-.white h3 ,.white p{
-    padding-left: 12px;
+.white h3,
+.white p {
+  padding-left: 12px;
 }
 
-.our-work h2{
-    margin-bottom: 20px;
+.our-work h2 {
+  margin-bottom: 20px;
 }
-.our-work p{
-    margin-left: 7px;
+.our-work p {
+  margin-left: 7px;
+}
+
+#price{
+    padding: 40px;
+}
+.pricing {
+  text-align: center;
+  margin-top: 90px;
+}
+.basic {
+  border: solid rgb(211, 206, 206) 2px;
+  margin-top: 60px;
+  width: 30%;
+}
+.basic h4 {
+  background-color: black;
+  color: white;
+  padding: 30px 0;
+}
+
+.basic p {
+  border: 1px solid rgb(211, 206, 206);
+  padding: 14px 0;
+}
+
+.span-gb {
+  font-weight: bold;
+}
+
+.sign-up {
+  background-color: teal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  padding: 12px 20px;
+}
+.parent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.basic:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* =====================
+    Contact Us Section
+========================= */
+
+.form {
+  margin-top: 100px;
+  background-color: rgb(236, 236, 236);
+  padding: 60px 0;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-us h1 {
+  border-bottom: 4px solid teal;
+  display: inline-block;
+}
+
+.contact-us {
+  /* border: 2px solid red ; */
+  width: 40%;
+  line-height: 40px;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+.real-form {
+  background-color: white;
+  /* border: 2px solid royalblue; */
+  width: 55%;
+  box-shadow: 5px 5px 25px rgb(190, 190, 188);
+  padding-top: 20px;
+  padding-left: 19px;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(201, 200, 200);
+  height: 30px;
+  width: 100%;
+}
+
+.checkbox {
+  width: 20px;
+}
+
+.checkbox-label {
+  position: relative;
+  bottom: 10px;
+  left: 19px;
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid black;
+  float: right;
+  margin-bottom: 17px;
+  margin-right: 10px;
+}
+
+/* =====================
+    Map Section
+========================= */
+.map {
+  width: 100%;
+  min-height: 500px;
+}
+
+/* =====================
+    Footer Section
+========================= */
+.main-icon {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.footer-text {
+  padding-top: 50px;
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  margin-bottom: 17px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 280px;
+}
+.main-icon div {
+  background-color: teal;
+  color: white;
+  height: 45px;
+  width: 50px;
+  text-align: center;
+  padding-top: 12px;
+}
+
+.main-icon i {
+  font-size: 16px;
+}
+
+.main-icon div:hover {
+  background-color: #cccaca;
+  color: black;
+}
+
+.fin {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.fin a {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color: rgb(241, 241, 241);
+  text-decoration-thickness: 2px;
+  display: inline;
+  padding: 0px;
+  margin: 0px 2px;
 }
 
 
-.pricing{
+.arrow i {
+  font-size: 22px;
+    position: relative;
+    top: 3px;
+}
+
+
+
+.top {
+    visibility: hidden;
+    position: absolute;
+    top: 12px;
+    right: 71px;
     text-align: center;
-    margin-top: 90px; 
+   margin-right: 7px;
+   padding: 6px;
+    
+    background-color: teal;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+
+    
 }
-.basic{
-    border: solid rgb(211,206,206) 2px;
-    margin-top: 60px ;
-    width: 30%;
-}
-.basic h4{
-    background-color: black;
-    color: white;
-    padding: 30px 0;
+.arrow {
+  /* border: 2px solid red ; */
+    margin-right: 17px;
+    padding: 15px;
+    position: absolute;
+    height: 60px;
+    right: 0px;
+    
 }
 
-.basic p{
-    border: 1px solid rgb(211,206,206);
-    padding: 14px 0;
+.arrow:hover  {
+  background-color: #b1acac;
 }
-
-.span-gb{
-    font-weight: bold ;
-}
-
-.sign-up{
-background-color: teal; 
-margin-top: 10px;
-margin-bottom: 10px;
-
-padding: 12px 20px;
-}
-.parent{
+.container{
     display: flex;
-    justify-content: space-around;
+    float: right;
+    position: relative;
+    bottom: 48px;
+    width: 24%; 
+    /* right: 0px; */
+    text-align: center;
 }
 
-.basic:hover{
-    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
-}
-
-.form{
-    margin-top: 100px;
-    background-color: rgb(236,236,236);
-    padding: 60px 0;
-
-    display: flex;
-    justify-content: space-around;
-}
-
-.contact-us h1{
-    border-bottom: 4px solid teal;
-    display: inline-block;
-}
-
-.contact-us{
-    /* border: 2px solid red ; */
-    width: 40%;
-    line-height: 40px;
-    padding-left: 20px;
-    margin-top: 20px;
-
-}
-.real-form{
-    background-color: white;
-    /* border: 2px solid royalblue; */
-    width: 55%;
-    box-shadow: 5px 5px 25px rgb(190,190, 188) ;
-    padding-top: 20px;
-    padding-left: 19px;
-}
-
-input{
-    border: none;
-    border-bottom: 1px solid rgb(201, 200, 200);
-    height: 30px;
-    width: 100%;
-}
-
-.checkbox{
-    width: 20px;
-}
-
-.checkbox-label{
-   position: relative;
-   bottom: 10px;
-   left: 19px;
-}
-
-button{
-    background-color: black;
+.highlight-top {
+    background-color: teal;
     color: white;
-    padding: 10px 20px;
-    border: 1px solid black;
-    float:right ;
-    margin-bottom: 17px;
-    margin-right: 10px;
+    visibility: visible;
+
 }
 
-.map{
-    width: 100%;
-    height: 500px;
+.arrow:active{
+    transform: scale(0.9);
+}
+
+.arrow a{
+  text-decoration: none;
+  background-color: transparent;
+  display: inline;
+  width: 100%;
+  height: 100%;
 }
